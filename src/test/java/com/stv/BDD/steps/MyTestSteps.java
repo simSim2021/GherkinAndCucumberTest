@@ -12,7 +12,7 @@ import java.util.concurrent.TimeUnit;
 
 import static com.stv.framework.core.lib.WigglePageURLs.START_URL;
 
-public class MyTest extends BasicFactoryTest {
+public class MyTestSteps extends BasicFactoryTest {
     MyTestFactoryPage myTestFactoryPage = new MyTestFactoryPage();
 
     @Given("^the main page is loaded$")
