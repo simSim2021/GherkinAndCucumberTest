@@ -16,7 +16,7 @@ public class TermsConditionsPage extends FactoryPage {
     }
 
 
-    @FindBy(xpath = "//a[@href='https://www.wiggle.co.uk']")
+    @FindBy(xpath = "//a[@href='//www.wiggle.co.uk']")
     private WebElement linkMainPage;
 
     public void clickLinkMainPage()  {

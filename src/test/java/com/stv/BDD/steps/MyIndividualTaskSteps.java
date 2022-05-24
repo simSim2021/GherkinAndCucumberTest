@@ -65,7 +65,7 @@ public class MyIndividualTaskSteps extends BasicFactoryTest {
     @And("^check that page Terms&Conditions is loaded$")
     public void checkThatPageTermsConditionsIsLoaded() {
 
-        getDriver().manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
+        getDriver().manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         Assert.assertEquals(new TermsConditionsPage().isPageNameDisplayed(), true, "T&C page isn't loaded properly");
     }
 
