@@ -39,4 +39,6 @@ public class MyTestSteps extends BasicFactoryTest {
         getDriver().manage().timeouts().pageLoadTimeout(5, TimeUnit.SECONDS);
         new RegistrationPage().isRegistrationContainerDisplayed();
     }
+
+
 }

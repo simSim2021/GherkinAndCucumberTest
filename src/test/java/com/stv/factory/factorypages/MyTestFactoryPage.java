@@ -16,4 +16,6 @@ public class MyTestFactoryPage extends FactoryPage{
 
     public void clickOnContinueButton(){ qaDualRegister.click(); }
 
+    public void clickOnInputFieldOutline(String email){ dualRegisterEmailModelEmail.sendKeys(email); };
+
 }

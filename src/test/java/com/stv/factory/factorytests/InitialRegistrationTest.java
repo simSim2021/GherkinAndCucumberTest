@@ -4,7 +4,7 @@ import com.stv.factory.factorypages.RegistrationPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class InitialRegistration extends BasicFactoryTest {
+public class InitialRegistrationTest extends BasicFactoryTest {
     MyTestFactoryPage myTestFactoryPage = new MyTestFactoryPage();
 
     @Test(description = "Initialization/first step of a new customer's registration")

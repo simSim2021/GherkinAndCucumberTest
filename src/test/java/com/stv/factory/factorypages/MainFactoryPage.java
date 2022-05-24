@@ -5,11 +5,14 @@ import org.openqa.selenium.support.FindBy;
 
 public class MainFactoryPage extends FactoryPage {
 
-    @FindBy(id = "accountLink")
+    @FindBy(xpath = "//a[@id = 'accountLink']")
     private WebElement accountLink;
 
     @FindBy(xpath = "//button[contains(text(),'Accept All Cookies')]")
     private WebElement trustButton;
+
+    @FindBy(xpath = "//a[@class = 'bem-header__basket--empty']")
+    private WebElement basketButton;
 
     public boolean isAccountLinkDisplayed(){
         return accountLink.isDisplayed();
@@ -17,6 +20,11 @@ public class MainFactoryPage extends FactoryPage {
 
     public void clickOnAccountLink(){
         accountLink.click();
+    }
+
+    public void clickOnBasketButton(){
+
+        basketButton.click();
     }
 
     public void clickOnTrustButton(){
